@@ -9,6 +9,8 @@ var options = {
       data: [16.5, 17.5, 16.2, 17.5, 16, 19.5, 16,17, 16, 19,18,19]
     }
   ],
+  colors:['#1B55E2','#E7515A'],
+
   chart: {
     type: "area",
     width: "100%",
@@ -16,7 +18,7 @@ var options = {
     background: "#fff",
     dropShadow: {
       enabled: true,
-      color: "#000"
+      color: "#fff"
     },
     toolbar:{
       show:false
@@ -30,14 +32,15 @@ var options = {
     enabled: false
   },
   markers: {
-    colors: ["#000"]
+    colors: [ '#1B55E2','#E7515A']
   },
   stroke: {
     curve: "smooth",
-    width: 2,
+    width: 3,
     fill: {
       type: "solid",
-      colors:['red', 'blue'],
+      colors:[ '#1B55E2','#E7515A'],
+
     }
   },
   legend:{
@@ -95,32 +98,33 @@ var options = {
    },
    
       fill: {
-        opacity: ,
+        opacity: 5,
       },
-      // tooltip: {
-      //   y: {
-      //     formatter: function (value) {
-      //       return "$ " + value + " thousands";
-      //     },
-      //   },
-      // },
+      
     }; 
 
 
 
 // // Initialize the chart with the data
-const chart = new ApexCharts(document.querySelector("#chart"), options);
-chart.render();
+const achart = new ApexCharts(document.querySelector("#chart"), options);
+achart.render();
 
 
 
 // pie chart
 
 var options = {
-  series: [44, 55, 41, 17, 15],
+  series: [270, 100, 100, 285, 237],
   chart: {
+  // width: 380,
+  height:'100%',
   type: 'donut',
 },
+dataLabels: {
+  enabled: false
+},
+labels: ["Apparel", "Sports", "Test", "Others","Test_1"],
+colors:["#E2A03F","#5C1AC3","#E2A03F","#E7515A","#5C1AC3"],
 responsive: [{
   breakpoint: 480,
   options: {
@@ -128,14 +132,24 @@ responsive: [{
       width: 200
     },
     legend: {
-      position: 'bottom'
+      show: false
     }
   }
-}]
+}],
+legend: {
+  position: 'bottom',
+  horizontalAlign: 'center',
+  // offsetY: ,
+  // height: 230,
+  onItemClick: {
+    toggleDataSeries: true
+  }
+}
 };
 
-  var piechart = new ApexpieCharts(document.querySelector("#piechart"), options);
-piechart.render();
+
+  var chart = new ApexCharts(document.querySelector("#piechart"), options);
+chart.render();
 
 
 // jqury code
