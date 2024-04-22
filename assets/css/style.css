@@ -8,14 +8,14 @@
 }
 
 :root {
-    --bg-color-white:#ffffff;
-    --bg-primary--white:#F6F7FA;
-    --bg-content--white:#FAFAFA;
-    --bg-color-black:#0E1726;
-    --bg-primary--black:#121A2A;
-    --bg-content--black:#060818;
-    --bg-color-hover:#4361ee;
-    --menu-li-hover:#ebebeb;
+    --bg-color-white: #ffffff;
+    --bg-primary--white: #F6F7FA;
+    --bg-content--white: #FAFAFA;
+    --bg-color-black: #0E1726;
+    --bg-primary--black: #121A2A;
+    --bg-content--black: #060818;
+    --bg-color-hover: #4361ee;
+    --menu-li-hover: #ebebeb;
     /* --theme-default: #307EF3;
     --theme-secondary: #EBA31D;
     --light-background: rgba(242, 243, 247, 0.7);
@@ -242,17 +242,19 @@ header span {
     font-size: 24px;
 }
 
-.second_sec_header >i {
+.second_sec_header>i {
     padding: 8px;
     border-radius: 50%;
     background-color: var(--bg-primary--white);
     font-size: 20px;
     margin-left: 6px;
 }
+
 .second_sec_header i:hover {
     color: var(--bg-color-hover);
     cursor: pointer;
 }
+
 .search {
     padding: 8px 16px 8px 36px;
     margin-left: 10px;
@@ -265,10 +267,12 @@ header span {
     border: none;
     outline: none;
 }
+
 .searchbar {
     top: 8px;
     left: 10px;
 }
+
 .icon i {
     padding: 8px;
     border-radius: 50%;
@@ -300,10 +304,12 @@ header span {
     width: 100%;
     overflow: hidden;
 }
-.ri-moon-line{
+
+.ri-moon-line {
     display: none;
 }
-.language{
+
+.language {
     top: 50px;
     right: 130px;
     background-color: var(--bg-color-white);
@@ -312,27 +318,32 @@ header span {
     grid-template-columns: repeat(2, 132px);
     grid-row-gap: 12px;
     border-radius: .25rem;
-    
+
 }
-.b{
+
+.b {
     padding: 8px 16px;
-    display: flex ;
+    display: flex;
 }
-.b div{
+
+.b div {
     height: 20px;
     width: 20px;
     border-radius: 50%;
     overflow: hidden;
 }
-.b img{
+
+.b img {
     transform: scale(1.5);
-   
+
 }
-.b span{
+
+.b span {
     font-size: 14px;
     margin-left: 12px;
 }
-.right-sec{
+
+.right-sec {
     position: absolute;
     right: 20px;
 }
@@ -359,7 +370,7 @@ aside .logo i {
     /* background-color: var(--white); */
     height: 95vh;
     overflow: scroll;
-    
+
 
 }
 
@@ -402,12 +413,14 @@ aside .logo i {
     font-size: 14px;
     margin-right: 12px;
 }
+
 /* .menu_li :hover{
     color: #4362ee8b;
 } */
-.menu_li .ri-arrow-right-s-line{
+.menu_li .ri-arrow-right-s-line {
     margin: 0;
 }
+
 .menu .ri-arrow-right-s-line {
     font-size: 25px;
 }
@@ -516,7 +529,7 @@ aside .logo i {
 .box {
     /* border: 2px solid #FAFAFA; */
     background-color: var(--bg-color-white);
-    
+
 }
 
 .box:nth-child(1) {
@@ -530,19 +543,32 @@ aside .logo i {
     padding: 20px;
     overflow: hidden;
 }
-.text-lg{
+
+.text-lg {
     margin-bottom: 20px;
 }
-.text-lg span{
+
+.text-lg span {
     font-size: 20px;
 }
-.text-lg2{
+
+.text-lg2 {
     font-size: 18px;
 }
+
 .box:nth-child(3) {
     grid-column: 9 / span 4;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    overflow: hidden;
+    padding: 20px;
+}
+.box_3_font{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#piechart{
+    
 }
 
 .box:nth-child(4) {
@@ -596,7 +622,8 @@ aside .logo i {
 .box:nth-child(12) {
     grid-column: 1 / span 12;
 }
-.fix{
+
+.fix {
     position: fixed;
     top: 50%;
     right: 0;
@@ -606,23 +633,27 @@ aside .logo i {
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
-#chart {
-   height: 100%;
-   width: 100%;
-  }
 
-  .legend{
+#chart {
+    height: 100%;
+    width: 100%;
+}
+
+.legend {
     position: absolute;
 
-  }
-  .apexcharts-toolbar{
+}
+
+.apexcharts-toolbar {
     display: none;
-  }
-  .amount{
+}
+
+.amount {
     margin-left: 10px;
     font-size: 16px;
-  }
-  .main-chart{
+}
+
+.main-chart {
     height: 81%;
-  }
+}
 
